@@ -116,7 +116,7 @@
 		</extensions>
 	</build>
 	<repositories>
-  		<repository>
+		<repository>
 			<id>nhorizon-maven-repository</id>
 			<url>http://mvn.nhorizon.cn/maven</url>
 			<layout>default</layout>
@@ -124,25 +124,25 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
-  		<repository>
+		<repository>
 			<id>nhorizon-maven-snapshots-repository</id>
-            <url>http://mvn.nhorizon.cn/maven/snapshots</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
+			<url>http://mvn.nhorizon.cn/maven/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
 		</repository>
 		<repository>
-		  <id>android.support-mvn-repo</id>
-		  <url>https://raw.github.com/kmchugh/android.support/mvn-repo</url>
-		  <snapshots>
-		    <enabled>true</enabled>
-		    <updatePolicy>daily</updatePolicy>
-		  </snapshots>
+			<id>android.support-mvn-repo</id>
+			<url>https://raw.github.com/kmchugh/android.support/mvn-repo</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+			</snapshots>
 		</repository>
-  	</repositories>
+	</repositories>
 	<distributionManagement>
 		<repository>
 			<id>nhorizon-maven-repository</id>
