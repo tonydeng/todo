@@ -22,7 +22,7 @@ public class TodoListActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 	// Inflate the menu; this adds items to the action bar if it is present.
-	getMenuInflater().inflate(cn.nhorizon.android.demo.todo.R.menu.main, menu);
+	getMenuInflater().inflate(cn.nhorizon.android.demo.todo.R.menu.todo_main, menu);
 	return true;
     }
 
