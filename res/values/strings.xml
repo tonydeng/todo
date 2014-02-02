@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Maven Quickstart</string>
+    <string name="app_name">ToDo</string>
     <string name="hello">Hello todo!</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    
+    <string name="s_b_add">Add</string>
+    <string name="s_hint_add">Add Task</string>
+    <string name="s_delete">Delete Tasks</string>
 
 </resources>
