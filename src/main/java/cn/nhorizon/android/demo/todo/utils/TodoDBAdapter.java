@@ -7,9 +7,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
 public class TodoDBAdapter {
-	private static final String KEY_ROWID = "_id";
-	private static final String KEY_TASK = "task";
-	private static final String KEY_STATE = "state";
+	public static final String KEY_ROWID = "_id";
+	public static final String KEY_TASK = "task";
+	public static final String KEY_STATE = "state";
 	private static final String DATABASE_TABLE = "todolist";
 
 	private Context context;
@@ -69,8 +69,10 @@ public class TodoDBAdapter {
 	}
 
 	public Cursor fetchAllTasks() {
-		return database.query(DATABASE_TABLE, new String[] { KEY_ROWID,
-				KEY_TASK, KEY_STATE }, null, null, null, null, null);
+		return database.query(DATABASE_TABLE, new String[] { KEY_ROWID, KEY_TASK,
+				KEY_STATE }, KEY_STATE + "=?", new String[]{"0"}, null, null, null, null);
+//		return database.query(DATABASE_TABLE, new String[] { KEY_ROWID,
+//				KEY_TASK, KEY_STATE }, null, null, null, null, null);
 	}
 
 	public Cursor fetchTask(String task) {
