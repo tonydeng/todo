@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -85,8 +86,10 @@ public class TodoListActivity extends Activity {
 	
 	@Override
     public boolean onOptionsItemSelected(MenuItem item) {
+		Log.d("item id", ""+item.getItemId());
         switch (item.getItemId()) {
             case R.id.clear_finished_tasks:
+            	Log.d("is clear_finished_tasks", ""+R.id.clear_finished_tasks);
             	db.deleteCompleteTasks();
             	the_cursor = db.fetchAllTasks();
             	adapter.changeCursor(the_cursor);
