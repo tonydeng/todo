@@ -69,6 +69,12 @@ public class TodoDBAdapter {
 		Log.d("deleteComlete tasks", ""+result);
 		return result;
 	}
+	
+	public long deleteAllTasks(){
+		long result = database.delete(DATABASE_TABLE, null, null);
+		Log.d("detele all tasks",""+result);
+		return result;
+	}
 
 	public Cursor fetchAllTasks() {
 		return database.query(DATABASE_TABLE, new String[] { KEY_ROWID, KEY_TASK,

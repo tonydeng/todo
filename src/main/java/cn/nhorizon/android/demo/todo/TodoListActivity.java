@@ -91,14 +91,17 @@ public class TodoListActivity extends Activity {
             case R.id.clear_finished_tasks:
             	Log.d("is clear_finished_tasks", ""+R.id.clear_finished_tasks);
             	db.deleteCompleteTasks();
-            	the_cursor = db.fetchAllTasks();
-            	adapter.changeCursor(the_cursor);
-                return true;
-
+            	break;
+            case R.id.clean_all_tasks:
+            	Log.d("is clean all tasks",""+R.id.clean_all_tasks);
+            	db.deleteAllTasks();
+            	break;
         }   
-        return false;
+        the_cursor = db.fetchAllTasks();
+    	adapter.changeCursor(the_cursor);
+        
+        return true;
 	}
-	
 	
 	
 	OnClickListener mAddToDoListener = new OnClickListener() {

@@ -8,6 +8,7 @@
     
     <string name="s_b_add">Add</string>
     <string name="s_hint_add">Add Task</string>
-    <string name="s_delete">Delete Tasks</string>
+    <string name="s_delete">Delete Selected Tasks</string>
+    <string name="s_delete_all_task">Delete All Tasks</string>
 
 </resources>

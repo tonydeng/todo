@@ -3,5 +3,6 @@
     <item
         android:id="@+id/clear_finished_tasks"
         android:title="@string/s_delete"/>
+    <item android:id="@+id/clean_all_tasks" android:title="@string/s_delete_all_task"/>
 
 </menu>
