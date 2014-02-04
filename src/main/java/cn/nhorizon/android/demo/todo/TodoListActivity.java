@@ -112,6 +112,7 @@ public class TodoListActivity extends Activity {
 			db.createTask(task.getText().toString(), 0);
 			the_cursor = db.fetchAllTasks();
 			adapter.changeCursor(the_cursor);
+			task.setText("");
 		}
 	};
 	private class MyAdapter extends ResourceCursorAdapter{
