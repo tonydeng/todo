@@ -14,19 +14,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.ResourceCursorAdapter;
 import cn.nhorizon.android.demo.todo.utils.TodoDBAdapter;
 
 public class TodoListActivity extends Activity {
+	private Menu mMenu;
 	private static ArrayList<HashMap<String, String>> todoData = new ArrayList<HashMap<String,String>>();
 	private static TodoDBAdapter db;
-	private Menu mMenu;
 	private MyAdapter adapter;
 	private Cursor the_cursor;
 	/**
@@ -88,8 +88,8 @@ public class TodoListActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
 		Log.d("item id", ""+item.getItemId());
         switch (item.getItemId()) {
-            case R.id.clear_finished_tasks:
-            	Log.d("is clear_finished_tasks", ""+R.id.clear_finished_tasks);
+            case R.id.clear_selected_tasks:
+            	Log.d("is clear_selected_tasks", ""+R.id.clear_selected_tasks);
             	db.deleteCompleteTasks();
             	break;
             case R.id.clean_all_tasks:
