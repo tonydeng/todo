@@ -22,7 +22,7 @@ public class TodoFragmentActivity extends FragmentActivity implements OnNewItemA
 		ToDoListFragment toDoListFragment = (ToDoListFragment) fm.findFragmentById(R.id.TodoListFragment);
 		
 		todoItems = new ArrayList<String>();
-		aa = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_checked,todoItems);
+		aa = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,todoItems);
 		
 		toDoListFragment.setListAdapter(aa);
 		
